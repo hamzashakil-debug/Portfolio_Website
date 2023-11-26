@@ -12,13 +12,14 @@ pool:
   name: default 
 
 steps:
+
+- script: echo BuildingDevopsPortfolioWebsite
+  displayName: 'New Portfolio'
+
 - task: Npm@1
   inputs:
     command: 'install'
   displayName: 'Install npm packages'
-
-- script: echo BuildingDevopsPortfolioWebsite
-  displayName: 'New Portfolio'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
